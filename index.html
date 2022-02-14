@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 style="text-align:center;" id="pong-on-the-stm32-nucleo-mcu">Pong on the STM32 nucleo MCU</h1>
+	<h2 style="text-align:center;" id="ryan-wenger">Ryan Wenger</h2>
+	<h3 style="text-align:center;" id="ece-153b-w22">ECE 153B, Winter 2022</h3>
+	
+	<p style="text-align:center;">
+		<a href="index.html">Home</a>
+
+		&emsp;
+
+		<a href="updates.html">Weekly Progress Reports</a>
+		
+		&emsp;
+		
+		<a href="part_list.html">Part List</a>
+	</p>
+	
+	</br>
+
+	<h2 id="overview">Overview</h2>
+	<p>This project aims to implement the classic single-player game <em>Pong</em> on the STM32 nucleo board using a Wii nunchuk and LCD display. The player will be able to move their paddle up or down using the joystick on the nuchuk, and the game will be shown on the LCD screen. The user will also be able to select a difficulty and reset/pause the game via a menu interface which can be brought up by pressing the &#39;c&#39; button on the nunchuk.</p>
+	
+	<h2 id="parts">Parts</h2>
+	<ul>
+		<li>Wii Nunchuk remote (via I<sup>2</sup>C)</li>
+		<li>ILI9341 LCD Display (ST7735R) (via SPI)</li>
+	</ul>
+	
+	<h2 id="block-diagram">Block Diagram</h2>
+	<img src="block_diagram.jpeg" alt="Block Diagram" width="544" height="102">
+
+</body>
+</html>
