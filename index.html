@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h1 style="text-align:center;" id="pong-on-the-stm32-nucleo-mcu">Pong on the STM32 nucleo MCU</h1>
+	<h1 style="text-align:center;" id="nucleo-pong-bot">nucleoPong</h1>
 	<h2 style="text-align:center;" id="ryan-wenger">Ryan Wenger</h2>
 	<h3 style="text-align:center;" id="ece-153b-w22">ECE 153B, Winter 2022</h3>
 	
@@ -20,12 +20,12 @@
 	</br>
 
 	<h2 id="overview">Overview</h2>
-	<p>This project aims to implement the classic single-player game <em>Pong</em> on the STM32 nucleo board using a Wii nunchuk and LCD display. The player will be able to move their paddle up or down using the joystick on the nunchuk, and the game will be shown on the LCD screen. The user will also be able to select a difficulty and reset/pause the game via a menu interface which can be brought up by pressing the &#39;c&#39; button on the nunchuk.</p>
+	<p>This project aims to implement a bot for the Cup Pong game in the iOS GamePigeon app. It will use the nucleo’s USB peripheral mode to act as a mouse connected to an iPad over USB type-C, and I<sup>2</sup>C to connect to a Wii nunchuk which would allow a user to move the cursor to select a cup to target. There will also be an automatic mode, where it just fires at all the default targets, but the manual control allows the bot to be used when the cups are placed randomly. If time permits, I will also implement a settings/instructions GUI on an LCD screen.</p>
 	
 	<h2 id="parts">Parts Overview</h2>
 	<ul>
 		<li>Wii Nunchuk remote (via I<sup>2</sup>C)</li>
-		<li>ILI9341 LCD Display (via SPI)</li>
+		<li>iPad Pro 11-inch (via USB)</li>
 	</ul>
 	
 	<h2 id="block-diagram">Block Diagram</h2>
