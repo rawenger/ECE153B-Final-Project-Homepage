@@ -18,8 +18,8 @@
 	</br>
 
 	<h2>Week 1: 2/18 - 2/25</h2>
-	<p>After a LOT of work, I finally got the USB stack up and running, and the board now enumerates as an HID device when connected to my computer! It's highly satisfying using the nunchuk to control the mouse cursor on my laptop and iPad, but it's time to move on. Now that USB (and I<sup>2</sup>C) are ready, I've begun to lay out the basic code structure for the top-level application state machine which will handle program flow. Once that is done, the next big goal to tackle is reverse-engineering the game physics of Cup Pong so the bot will be able to determine how much "force" (a.k.a mouse movement) is required to target each ball.</p>
-	<img src="usb_device_enumeration.png" alt="USB enumeration" style="width:50%;height:50%">
+	<p>After a LOT of work, I finally got the USB stack up and running, and the board now enumerates as an HID device when connected to my computer!&nbsp; It's highly satisfying using the nunchuk to control the mouse cursor on my laptop and iPad, but it's time to move on.&nbsp; Now that USB (and I<sup>2</sup>C) are ready, I've begun to lay out the basic code structure for the top-level application state machine which will handle program flow. I've also started bringup on the driver for the LCD display that will be used as the main UI.&nbsp; Once that is done, the next big goal to tackle is reverse-engineering the game physics of Cup Pong so the bot will be able to determine how much "force" (a.k.a mouse movement) is required to target a given cup.</p>
+	<img src="usb_device_enumeration.png" alt="USB enumeration" style="width:30%;height:auto">
 
 	<!-- Talk about ridiculous mouse acceleration settings and the workaround -->
 
